@@ -20,7 +20,7 @@ get("/") do
 
   # get the symbols from the JSON
   @symbols = parsed_data.fetch("currencies").keys
-
+  
   # render a view template where I show the symbols
   erb(:homepage)
 end
